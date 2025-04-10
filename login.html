@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/icone_trilhas.png">
+    <link rel="stylesheet" href="./styles/style_login.css">
+    <title>Login Trilhas</title>
+</head>
+<body>
+    <div class="logos">
+        <img src="./assets/logo_trilhas_inova.png" alt="Logo Trilhas">
+        <img src="./assets/logo_sect_ma.png" alt="Logo SECTI - MA">
+    </div>
+    <div class="login">
+        <h1>Login Trilhas</h1>
+        <h2>Acesse seus dados de inscrição no programa trilhas</h2>
+        <div>
+            <section>
+                <div class="entrada">
+                    <label class="entrada_label" for="id-usuario">Id de Usuário</label>
+                    <input class="entrada_campo" type="text" id="id-usuario">
+                    <p class="alerta" id="alerta-id-usuario"></p>
+                </div>
+                <div class="entrada">
+                    <label class="entrada_label" for="senha">Senha</label>
+                    <input class="entrada_campo" type="password" id="senha" disabled>
+                    <div class="exibicao_senha">
+                        <label for="exibir-senha">Exibir senha</label>
+                        <input type="checkbox" id="exibir-senha">
+                    </div>
+                    <p class="alerta" id="alerta-senha"></p>
+                </div>
+                <p class="alerta" id="alerta-login"></p>
+                <a href="" class="esqueci-usuario-senha">Esqueci meu usuário/senha</a>
+                <div class="botoes">
+                    <button onclick="cancelar()">Cancelar</button>
+                    <button class="button_disabled" onclick="fazerLogin()" id="botao-login" disabled>Login</button>
+                </div>
+            </section>
+            <img class="img_ilustrativa" src="./assets/ilustracao_cabecalho.png" alt="">
+        </div>
+    </div>
+    <footer>
+        <p><b> Está com problemas ou dúvidas?</b></p>
+        <p>Entre em contato com o nosso suporte pelo e-mail: <strong>inovamaranhao@gmail.com</strong></p>
+    </footer>
+    <script src="./scripts/app_login.js"></script>
+</body>
+</html>

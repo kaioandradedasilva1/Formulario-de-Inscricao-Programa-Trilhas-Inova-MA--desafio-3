@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #FEE7D6;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color:  rgb(21, 23, 45);
+    color: white;
+    margin: 1% 20%;
+    padding: 2% 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;  
+    text-align: justify;
+}
+
+#logo-trilhas{
+    width: 40%;
+}
+
+#imagem-ilustrativa{
+    width: 30%;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 3% 0 3% 0;
+    text-align: center;
+    font-size: 1.5rem
+}
+
+main{
+    background-color: #FFFFFF;
+    color: #57534E;
+    margin: 0% 20%;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.descricao {
+    font-weight: 600;
+    text-align: center;
+}
+
+.botao_log_out {
+    width: 120px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
+    color: #57534E;
+}
+
+.botao_log_out img{
+    width: 24px;
+}
+
+h2 {
+    font-weight: 600;
+    color: #292524;
+    font-size: 1rem;
+}
+
+.secao{
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+}
+
+.secao_titulo{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.secao_informacoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+}
+
+.secao_informacoes p {
+    width: 48%;
+    justify-content: center;
+}
+
+.secao_botoes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.informacao_nome {
+    text-align: right;
+}
+
+.informacao_dado {
+    word-break: break-word;
+    text-align: left;
+    color: blue;
+    font-weight: 500;
+}
+
+.status_positivo {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.status_alerta {
+    background-color: yellow;
+    color: orangered;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer{
+    background-color:  rgb(21, 23, 45);
+    margin: 1% 20%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.87rem;
+    font-weight: 500;
+    color: white;
+}
+
+input {
+    width: 45%;
+    font-size: 1rem;
+}
+
+@media (max-width: 1000px ) {
+    header {
+        margin: 1% 1%;
+        padding: 2% 6%;
+    }
+
+    .cabecalho{
+        align-items: center;
+        font-size: 0.87rem;
+    }
+
+    #imagem-ilustrativa{
+        display: none;
+    }
+    
+    main{
+
+        margin: 0% 1%;
+        padding: 6%;
+    }
+
+    .formulario_secao_preenchimento_endereco{
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    footer{
+        margin: 1% 1%;
+        padding: 2%;   
+    }
+}
+
+

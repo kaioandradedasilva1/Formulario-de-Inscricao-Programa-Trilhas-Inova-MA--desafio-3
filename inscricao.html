@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/icone_trilhas.png">
+    <link rel="stylesheet" href="./styles/style_inscricao.css">
+    <title>Ficha de Inscrição - Trilhas</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo_trilhas_inova.png" alt="Logo do programa Trilhas Inova Maranhão" id="logo-trilhas">
+        <div class="cabecalho">
+            <h1>Ficha de Inscrição no Programa Trilhas</h1>
+        </div>
+    </header>
+    <main>
+        <button class="botao_log_out" onclick="fazerLogOut()">
+            <p>Fazer LogOut</p>
+            <img src="./assets/icone_log_out.png">
+        </button>
+        <p class="descricao">Aqui você pode visualizar seus dados informados durante a inscrição, alterar o id de usuário e senha de login e acompanhar o seu status no processo seletivo</p>
+        <section class="secao"> 
+            <p class="secao_titulo">Informações do Participante</p>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Nome completo:</p>
+                <p class="informacao_dado" id="nome"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Data de nascimento:</p>
+                <p class="informacao_dado" id="data-nascimento"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">CPF:</p>
+                <p class="informacao_dado" id="cpf"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Sexo:</p>
+                <p class="informacao_dado" id="sexo"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">E-mail:</p>
+                <p class="informacao_dado" id="email"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Telefone:</p>
+                <p class="informacao_dado" id="telefone"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Documento de Identidade:</p>
+                <p class="informacao_dado" id="doc-identidade"></p>
+            </div>
+        </section>
+        <section class="secao">
+            <p class="secao_titulo">Endereço Residencial</p>
+            <div class="secao_informacoes"> 
+                <p class="informacao_nome">CEP:</p>
+                <p class="informacao_dado" id="cep"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Rua:</p>
+                <p class="informacao_dado" id="rua"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Número:</p>
+                <p class="informacao_dado" id="numero"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Cidade:</p>
+                <p class="informacao_dado" id="cidade"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Estado:</p>
+                <p class="informacao_dado" id="estado"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Comprovante de residência:</p>
+                <p class="informacao_dado" id="comp-residencia"></p>
+            </div> 
+        </section>
+        <section class="secao">
+            <p class="secao_titulo">Trilha de Apredizagem</p>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Trilha selecionada:</p>
+                <p class="informacao_dado" id="trilha"></p>
+            </div>
+        </section>
+        <section class="secao"> 
+            <p class="secao_titulo">Login</p>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">ID de Usuário:</p>
+                <input class="informacao_dado" type="text" id="id-usuario" disabled>
+            </div> 
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Senha:</p>
+                <input class="informacao_dado" type="password" id="senha" disabled>
+            </div>
+            <div class="secao_botoes">
+                <button id="mostrar-senha">Mostrar senha</button>
+                <button id="alterar-usuario-senha">Alterar usuário/senha</button>
+            </div>
+        </section>
+        <section class="secao">
+            <p class="secao_titulo">Staus de inscrição</p>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Situação de inscrição:</p>
+                <p class="informacao_dado status_positivo" id="confirmacao-inscricao"></p>
+            </div>
+            <div class="secao_informacoes">
+                <p class="informacao_nome">Aprovação e classificação:</p>
+                <p class="status_alerta" id="status-aprov-reprov">Ainda não definido</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><b> Está com problemas ou dúvidas?</b></p>
+        <p>Entre em contato com o nosso suporte pelo e-mail: <strong>inovamaranhao@gmail.com </strong></p>
+    </footer>
+    <script src="./scripts/app_inscricao.js"></script>
+</body>
+</html>
